@@ -1,0 +1,21 @@
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type: TRACE
+
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:mytest
+    driver-class-name: org.h2.Driver
+
+  jackson:
+    serialization:
+      write_dates_as_timestamps: false
+
+spring.jpa:
+  show-sql: true
+  hibernate:
+    ddl-auto: none
